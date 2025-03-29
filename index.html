@@ -231,23 +231,39 @@
             class="text-4xl text-pink-500 font-bold mb-8 text-center"
             data-i18n="contactTitle"
           ></h2>
-          <form class="grid gap-6">
+          <form
+            action="https://formsubmit.co/vaguszdavid1209@gmail.com"
+            method="POST"
+            class="grid gap-6"
+          >
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_template" value="box" />
             <input
               type="text"
-              placeholder="Your Name"
-              data-i18n-placeholder=""
+              name="Name"
+              required
+              data-i18n-placeholder="yourName"
+              class="p-3 rounded bg-gray-800 text-white border border-gray-700"
+            />
+            <input
+              type="tel"
+              name="Phone"
+              required
+              data-i18n-placeholder="yourPhone"
               class="p-3 rounded bg-gray-800 text-white border border-gray-700"
             />
             <input
               type="email"
-              placeholder="Your Email"
-              data-i18n-placeholder=""
+              name="Email"
+              required
+              data-i18n-placeholder="yourEmail"
               class="p-3 rounded bg-gray-800 text-white border border-gray-700"
             />
             <textarea
               rows="5"
-              placeholder="Your Message"
-              data-i18n-placeholder=""
+              name="Message"
+              required
+              data-i18n-placeholder="yourMessage"
               class="p-3 rounded bg-gray-800 text-white border border-gray-700"
             ></textarea>
             <button
@@ -261,7 +277,7 @@
 
       <button
         id="backToTop"
-        class="fixed bottom-3 right-3 z-50 bg-pink-600 text-white p-5 rounded-3xl shadow-lg hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-pink-500 backdrop-blur-md bg-opacity-80 opacity-0 invisible transition-opacity"
+        class="animate-pulse fixed bottom-3 right-3 z-50 bg-pink-600 text-white p-5 rounded-3xl shadow-lg hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-pink-500 backdrop-blur-md bg-opacity-80 opacity-0 invisible transition-opacity"
       >
         ↑
       </button>

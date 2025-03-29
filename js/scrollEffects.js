@@ -26,7 +26,7 @@ export function initScrollEffects() {
                     backToTopTimeout = setTimeout(() => {
                         backToTop.classList.add("opacity-0", "invisible");
                         backToTop.classList.remove("opacity-100", "visible");
-                    }, 2000);
+                    }, 4000);
                 } else {
                     backToTop.classList.add("opacity-0", "invisible");
                     backToTop.classList.remove("opacity-100", "visible");
