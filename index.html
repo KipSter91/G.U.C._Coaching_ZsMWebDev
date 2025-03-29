@@ -1,159 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="title"></title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap"
-        rel="stylesheet" />
-    <link rel="shortcut icon" href="/Images/GUC_Coaching_logo_small.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/Images/GUC_Coaching_logo_small.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="js/main.js"></script>
+  </head>
 
-<body class="bg-black text-white scroll-smooth">
-    <header class="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur border-b border-pink-600">
-        <nav class="flex justify-between items-center p-4 w-full">
-            <div class="text-2xl font-bold text-pink-500 tracking-wide" data-i18n="title"></div>
-            <div class="md:hidden">
-                <button id="hamburger" class="relative w-10 h-10 focus:outline-none">
-                    <span
-                        class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-2 left-1"></span>
-                    <span
-                        class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-4 left-1"></span>
-                    <span
-                        class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-6 left-1"></span>
-                </button>
-            </div>
-            <div id="navLinks"
-                <div id="navLinks" class="hidden md:flex items-center gap-6 transition-all duration-300">
-
-                <a href="#about" class="hover:text-pink-500 transition" data-i18n="about"></a>
-                <a href="#services" class="hover:text-pink-500 transition" data-i18n="services"></a>
-                <a href="#stats" class="hover:text-pink-500 transition" data-i18n="stats"></a>
-                <a href="#contact" class="hover:text-pink-500 transition" data-i18n="contact"></a>
-                <select id="languageSelect" class="bg-black border border-pink-600 rounded px-2 py-1 text-white">
-                    <option value="en">EN</option>
-                    <option value="hu">HU</option>
-                    <option value="nl">NL</option>
-                </select>
-            </div>
-        </nav>
-        <div id="scroll-indicator"
-            class="h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 w-0 transition-all duration-300 ease-out">
+  <body class="bg-black text-white scroll-smooth">
+    <header
+      class="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur border-b border-pink-600"
+    >
+      <nav class="flex justify-between items-center p-4 w-full">
+        <div
+          class="text-2xl font-bold text-pink-500 tracking-wide"
+          data-i18n="title"
+        ></div>
+        <div class="md:hidden">
+          <button id="hamburger" class="relative w-10 h-10 focus:outline-none">
+            <span
+              class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-2 left-1"
+            ></span>
+            <span
+              class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-4 left-1"
+            ></span>
+            <span
+              class="absolute block w-8 h-0.5 bg-white transform transition duration-300 ease-in-out top-6 left-1"
+            ></span>
+          </button>
         </div>
+        <div
+          id="navLinks"
+          <div
+          id="navLinks"
+          class="hidden md:flex items-center gap-6 transition-all duration-300"
+        >
+          <a
+            href="#about"
+            class="hover:text-pink-500 transition"
+            data-i18n="about"
+          ></a>
+          <a
+            href="#services"
+            class="hover:text-pink-500 transition"
+            data-i18n="services"
+          ></a>
+          <a
+            href="#stats"
+            class="hover:text-pink-500 transition"
+            data-i18n="stats"
+          ></a>
+          <a
+            href="#contact"
+            class="hover:text-pink-500 transition"
+            data-i18n="contact"
+          ></a>
+          <select
+            id="languageSelect"
+            class="bg-black border border-pink-600 rounded px-2 py-1 text-white"
+          >
+            <option value="en">EN</option>
+            <option value="hu">HU</option>
+            <option value="nl">NL</option>
+          </select>
+        </div>
+      </nav>
+      <div
+        id="scroll-indicator"
+        class="h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 w-0 transition-all duration-300 ease-out"
+      ></div>
     </header>
 
     <main class="overflow-hidden">
-        <section
-            class="relative min-h-screen flex items-center justify-center max-w-6xl mx-auto mb-12 overflow-hidden py-20 px-6 rounded-3xl border-b border-pink-600">
-            <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
-                <source src="Images/David_hero_section_vid.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            <div class="relative z-10 text-center px-6 max-w-3xl animate-fade-in-up">
-                <h1 class="text-5xl md:text-6xl font-bold text-pink-500 mb-6 leading-tight drop-shadow-xl"
-                    data-i18n="heroTitle"></h1>
-                <p class="text-xl md:text-2xl mb-8" data-i18n="heroSubtitle"></p>
-                <a href="#contact"
-                    class="bg-pink-600 hover:bg-pink-500 text-white px-8 py-3 text-lg rounded-md transition transform hover:scale-105"
-                    data-i18n="heroCTA"></a>
+      <section
+        class="relative min-h-screen flex items-center justify-center max-w-6xl mx-auto mb-12 overflow-hidden py-20 px-6 rounded-3xl border-b border-pink-600"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute w-full h-full object-cover"
+        >
+          <source src="Images/David_hero_section_vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div
+          class="relative z-10 text-center px-6 max-w-3xl animate-fade-in-up"
+        >
+          <h1
+            class="text-5xl md:text-6xl font-bold text-pink-500 mb-6 leading-tight drop-shadow-xl"
+            data-i18n="heroTitle"
+          ></h1>
+          <p class="text-xl md:text-2xl mb-8" data-i18n="heroSubtitle"></p>
+          <a
+            href="#contact"
+            class="bg-pink-600 hover:bg-pink-500 text-white px-8 py-3 text-lg rounded-md transition transform hover:scale-105"
+            data-i18n="heroCTA"
+          ></a>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="relative fade-section py-20 px-6 rounded-3xl border-b border-pink-600 text-center max-w-6xl mx-auto overflow-hidden"
+      >
+        <h2
+          class="text-4xl text-pink-500 font-bold mb-6"
+          data-i18n="aboutTitle"
+        ></h2>
+        <p
+          class="text-lg leading-relaxed text-gray-300"
+          data-i18n="aboutText"
+        ></p>
+      </section>
+
+      <section
+        id="services"
+        class="relative bg-gray-900 scroll-mt-24 rounded-3xl my-12 mx-auto max-w-6xl p-10 shadow-lg"
+      >
+        <h2
+          class="text-4xl text-pink-500 font-bold mb-12 text-center"
+          data-i18n="servicesTitle"
+        ></h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+          >
+            <h3
+              class="text-2xl font-bold mb-2 text-white"
+              data-i18n="lifestyleCoaching"
+            ></h3>
+            <p class="text-gray-300" data-i18n="lifestyleText"></p>
+          </div>
+          <div
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+          >
+            <h3
+              class="text-2xl font-bold mb-2 text-white"
+              data-i18n="supplementGuidance"
+            ></h3>
+            <p class="text-gray-300" data-i18n="supplementText"></p>
+          </div>
+          <div
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+          >
+            <h3
+              class="text-2xl font-bold mb-2 text-white"
+              data-i18n="workoutPlans"
+            ></h3>
+            <p class="text-gray-300" data-i18n="workoutText"></p>
+          </div>
+          <div
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+          >
+            <h3
+              class="text-2xl font-bold mb-2 text-white"
+              data-i18n="nutritionCoaching"
+            ></h3>
+            <p class="text-gray-300" data-i18n="nutritionText"></p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="stats"
+        class="relative fade-section py-20 px-6 text-center max-w-6xl mx-auto overflow-hidden rounded-3xl border-b border-pink-600"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="Images/David_contact_section_vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10">
+          <h2
+            class="text-4xl text-pink-500 font-bold mb-12"
+            data-i18n="statsTitle"
+          ></h2>
+          <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4 text-white">
+            <div>
+              <div class="counter" data-target="142">0</div>
+              <p class="text-gray-400" data-i18n="clients"></p>
             </div>
-        </section>
-
-        <section id="about"
-            class="relative fade-section py-20 px-6 rounded-3xl border-b border-pink-600 text-center max-w-6xl mx-auto overflow-hidden">
-            <h2 class="text-4xl text-pink-500 font-bold mb-6" data-i18n="aboutTitle"></h2>
-            <p class="text-lg leading-relaxed text-gray-300" data-i18n="aboutText"></p>
-        </section>
-
-        <section id="services"
-            class="relative bg-gray-900 scroll-mt-24 rounded-3xl my-12 mx-auto max-w-6xl p-10 shadow-lg">
-            <h2 class="text-4xl text-pink-500 font-bold mb-12 text-center" data-i18n="servicesTitle"></h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div
-                    class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2 text-white" data-i18n="lifestyleCoaching"></h3>
-                    <p class="text-gray-300" data-i18n="lifestyleText"></p>
-                </div>
-                <div
-                    class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2 text-white" data-i18n="supplementGuidance"></h3>
-                    <p class="text-gray-300" data-i18n="supplementText"></p>
-                </div>
-                <div
-                    class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2 text-white" data-i18n="workoutPlans"></h3>
-                    <p class="text-gray-300" data-i18n="workoutText"></p>
-                </div>
-                <div
-                    class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2 text-white" data-i18n="nutritionCoaching"></h3>
-                    <p class="text-gray-300" data-i18n="nutritionText"></p>
-                </div>
+            <div>
+              <div class="counter" data-target="8">0</div>
+              <p class="text-gray-400" data-i18n="experience"></p>
             </div>
-        </section>
-
-        <section id="stats"
-            class="relative fade-section py-20 px-6 text-center max-w-6xl mx-auto overflow-hidden rounded-3xl border-b border-pink-600">
-            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-                <source src="Images/David_contact_section_vid.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div class="relative z-10">
-                <h2 class="text-4xl text-pink-500 font-bold mb-12" data-i18n="statsTitle"></h2>
-                <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4 text-white">
-                    <div>
-                        <div class="counter" data-target="142">0</div>
-                        <p class="text-gray-400" data-i18n="clients"></p>
-                    </div>
-                    <div>
-                        <div class="counter" data-target="8">0</div>
-                        <p class="text-gray-400" data-i18n="experience"></p>
-                    </div>
-                    <div>
-                        <div class="counter" data-target="6">0</div>
-                        <p class="text-gray-400" data-i18n="competitions"></p>
-                    </div>
-                    <div>
-                        <div class="counter" data-target="74">0</div>
-                        <p class="text-gray-400" data-i18n="reviews"></p>
-                    </div>
-                </div>
-                <div class="mt-12 text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="statsText"></div>
+            <div>
+              <div class="counter" data-target="6">0</div>
+              <p class="text-gray-400" data-i18n="competitions"></p>
             </div>
-        </section>
-
-        <section id="contact" class="relative bg-gray-900 rounded-3xl my-12 mx-auto max-w-6xl p-10 shadow-lg">
-            <div class="max-w-4xl mx-auto px-6">
-                <h2 class="text-4xl text-pink-500 font-bold mb-8 text-center" data-i18n="contactTitle"></h2>
-                <form class="grid gap-6">
-                    <input type="text" placeholder="Your Name" data-i18n-placeholder=""
-                        class="p-3 rounded bg-gray-800 text-white border border-gray-700">
-                    <input type="email" placeholder="Your Email" data-i18n-placeholder=""
-                        class="p-3 rounded bg-gray-800 text-white border border-gray-700">
-                    <textarea rows="5" placeholder="Your Message" data-i18n-placeholder=""
-                        class="p-3 rounded bg-gray-800 text-white border border-gray-700"></textarea>
-                    <button type="submit"
-                        class="bg-pink-600 hover:bg-pink-500 text-white py-3 px-6 rounded text-lg font-semibold"
-                        data-i18n="sendMessage"></button>
-                </form>
+            <div>
+              <div class="counter" data-target="74">0</div>
+              <p class="text-gray-400" data-i18n="reviews"></p>
             </div>
-        </section>
+          </div>
+          <div
+            class="mt-12 text-gray-400 max-w-2xl mx-auto text-lg"
+            data-i18n="statsText"
+          ></div>
+        </div>
+      </section>
 
-        <button id="backToTop"
-            class="fixed bottom-4 right-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-3 rounded-full shadow-xl hover:scale-110 hover:shadow-2xl transition-all duration-100 animate-pulse">↑</button>
+      <section
+        id="contact"
+        class="relative bg-gray-900 rounded-3xl my-12 mx-auto max-w-6xl p-10 shadow-lg"
+      >
+        <div class="max-w-4xl mx-auto px-6">
+          <h2
+            class="text-4xl text-pink-500 font-bold mb-8 text-center"
+            data-i18n="contactTitle"
+          ></h2>
+          <form class="grid gap-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              data-i18n-placeholder=""
+              class="p-3 rounded bg-gray-800 text-white border border-gray-700"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              data-i18n-placeholder=""
+              class="p-3 rounded bg-gray-800 text-white border border-gray-700"
+            />
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              data-i18n-placeholder=""
+              class="p-3 rounded bg-gray-800 text-white border border-gray-700"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-pink-600 hover:bg-pink-500 text-white py-3 px-6 rounded text-lg font-semibold"
+              data-i18n="sendMessage"
+            ></button>
+          </form>
+        </div>
+      </section>
+
+      <button
+        id="backToTop"
+        class="fixed bottom-3 right-3 z-50 bg-pink-600 text-white p-5 rounded-3xl shadow-lg hover:scale-110 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-pink-500 backdrop-blur-md bg-opacity-80 opacity-0 invisible transition-opacity"
+      >
+        ↑
+      </button>
     </main>
 
     <footer class="text-center py-4 text-gray-500 text-sm bg-black-900">
-        &copy;<span id="year"></span> G.U.C. Coaching — <span data-i18n="footerText"></span><br />
-        <span data-i18n="footerBuilt"></span>
-        <a href="https://www.zsoltmarku.com" class="text-blue-400 hover:underline" target="_blank"
-            rel="noopener">ZsMWebDev</a>
+      &copy;<span id="year"></span> G.U.C. Coaching —
+      <span data-i18n="footerText"></span><br />
+      <span data-i18n="footerBuilt"></span>
+      <a
+        href="https://www.zsoltmarku.com"
+        class="text-blue-400 hover:underline"
+        target="_blank"
+        rel="noopener"
+        >ZsMWebDev</a
+      >
     </footer>
-</body>
-
+  </body>
 </html>

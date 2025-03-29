@@ -7,44 +7,54 @@ body {
   font-weight: bold;
   color: #f472b6;
 }
+
 @keyframes fade-in-up {
   0% {
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .animate-fade-in-up {
   animation: fade-in-up 1s ease-out forwards;
 }
+
 @keyframes fade-in-up-soft {
   0% {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .fade-section {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
 .fade-section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 #hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 #hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 #hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
@@ -52,12 +62,16 @@ body {
 /* Hamburger menu styles */
 @media (max-width: 768px) {
   .dropdown-menu {
+    border: 1px solid #db2777;
     position: absolute;
     top: 3.5rem;
     right: 1rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Átlátszó fekete */
-    backdrop-filter: blur(5px); /*Backdrop blur*/
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Background color with transparency */
+    backdrop-filter: blur(5px);
+    /*Backdrop blur*/
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
