@@ -7,29 +7,22 @@ export function initHamburgerMenu() {
 
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("open");
-        const isOpen = navLinks.classList.toggle("hidden") === false;
-        if (isOpen) {
-            navLinks.classList.add("dropdown-menu");
-        } else {
-            navLinks.classList.remove("dropdown-menu");
-        }
+        navLinks.classList.toggle("open");
     });
 
     navLinks.addEventListener("click", (e) => {
         if (e.target.tagName === "A") {
             hamburger.classList.remove("open");
-            navLinks.classList.remove("dropdown-menu");
-            navLinks.classList.add("hidden");
+            navLinks.classList.remove("open");
         }
     });
 
     document.addEventListener("click", (e) => {
         const isClickInsideMenu = navLinks.contains(e.target);
         const isClickOnHamburger = hamburger.contains(e.target);
-        if (!isClickInsideMenu && !isClickOnHamburger && !navLinks.classList.contains("hidden")) {
+        if (!isClickInsideMenu && !isClickOnHamburger && navLinks.classList.contains("open")) {
             hamburger.classList.remove("open");
-            navLinks.classList.remove("dropdown-menu");
-            navLinks.classList.add("hidden");
+            navLinks.classList.remove("open");
         }
     });
 }

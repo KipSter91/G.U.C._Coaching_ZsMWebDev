@@ -43,12 +43,7 @@
             ></span>
           </button>
         </div>
-        <div
-          id="navLinks"
-          <div
-          id="navLinks"
-          class="hidden md:flex items-center gap-6 transition-all duration-300"
-        >
+        <div id="navLinks" class="nav-menu md:flex items-center gap-6">
           <a
             href="#about"
             class="hover:text-pink-500 transition"
@@ -89,8 +84,15 @@
       <section
         class="relative min-h-screen flex items-center justify-center max-w-6xl mx-auto mb-12 overflow-hidden py-20 px-6 rounded-3xl border-b border-pink-600"
       >
+        <img
+          src="Images/GUC_logo.png"
+          alt="GUC Logo"
+          id="logo-overlay"
+          class="absolute z-20 w-1/2 md:w-1/3 opacity-0"
+        />
+
         <video
-          autoplay
+          id="hero-video"
           muted
           loop
           playsinline
@@ -99,12 +101,15 @@
           <source src="Images/David_hero_section_vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
         <div
-          class="relative z-10 text-center px-6 max-w-3xl animate-fade-in-up"
+          id="hero-text"
+          class="relative z-10 text-center px-6 max-w-3xl opacity-0"
         >
           <h1
-            class="text-5xl md:text-6xl font-bold text-pink-500 mb-6 leading-tight drop-shadow-xl"
+            class="text-3xl md:text-7xl font-bold text-pink-500 mb-6 leading-tight drop-shadow-xl"
             data-i18n="heroTitle"
           ></h1>
           <p class="text-xl md:text-2xl mb-8" data-i18n="heroSubtitle"></p>
@@ -139,8 +144,10 @@
           data-i18n="servicesTitle"
         ></h2>
         <div class="grid md:grid-cols-2 gap-12">
+          <!-- Lifestyle Coaching -->
           <div
-            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105 cursor-pointer"
+            data-service="lifestyle"
           >
             <h3
               class="text-2xl font-bold mb-2 text-white"
@@ -148,8 +155,11 @@
             ></h3>
             <p class="text-gray-300" data-i18n="lifestyleText"></p>
           </div>
+
+          <!-- Supplement Guidance -->
           <div
-            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105 cursor-pointer"
+            data-service="supplements"
           >
             <h3
               class="text-2xl font-bold mb-2 text-white"
@@ -157,8 +167,11 @@
             ></h3>
             <p class="text-gray-300" data-i18n="supplementText"></p>
           </div>
+
+          <!-- Custom Workout Plans -->
           <div
-            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105 cursor-pointer"
+            data-service="workouts"
           >
             <h3
               class="text-2xl font-bold mb-2 text-white"
@@ -166,8 +179,11 @@
             ></h3>
             <p class="text-gray-300" data-i18n="workoutText"></p>
           </div>
+
+          <!-- Nutrition Coaching -->
           <div
-            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105"
+            class="bg-black border border-pink-600 p-6 rounded-lg shadow hover:shadow-pink-600 transition transform hover:scale-105 cursor-pointer"
+            data-service="nutrition"
           >
             <h3
               class="text-2xl font-bold mb-2 text-white"

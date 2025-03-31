@@ -6,7 +6,7 @@ export const translations = {
         services: "Services",
         stats: "Stats",
         contact: "Contact",
-        heroTitle: "Grow Under Control",
+        heroTitle: "Growing Under Control",
         heroSubtitle: "Elite training. Tailored nutrition. Next-level results.",
         heroCTA: "Start Transformation",
         aboutTitle: "About Me",
@@ -47,7 +47,7 @@ export const translations = {
         services: "Szolgáltatások",
         stats: "Eredmények",
         contact: "Kapcsolat",
-        heroTitle: "Grow Under Control",
+        heroTitle: "Growing Under Control",
         heroSubtitle:
             "Professzionális edzés. Személyre szabott táplálkozás. Látványos eredmények.",
         heroCTA: "Kezdd el az átalakulást",
@@ -89,7 +89,7 @@ export const translations = {
         services: "Diensten",
         stats: "Resultaten",
         contact: "Contact",
-        heroTitle: "Grow Under Control",
+        heroTitle: "Growing Under Control",
         heroSubtitle:
             "Elite training. Gepersonaliseerde voeding. Resultaten op een hoger niveau.",
         heroCTA: "Start je Transformatie",
