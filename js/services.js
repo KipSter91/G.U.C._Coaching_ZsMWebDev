@@ -1,4 +1,4 @@
-export const services = {
+export const servicesModal = {
     lifestyle: {
       title: "Lifestyle Coaching",
       description:
@@ -9,18 +9,18 @@ export const services = {
       title: "Supplement Guidance",
       description:
         "Precise supplement strategies to fuel your performance, support recovery, and enhance longevity.",
-      image: "/Images/supplements.jpg",
+      image: "/Images/lifestyle.jpg",
     },
     workouts: {
       title: "Custom Workout Plans",
       description:
         "Personalized training programs built around your goals, body type and lifestyle.",
-      image: "/Images/workouts.jpg",
+      image: "/Images/lifestyle.jpg",
     },
     nutrition: {
       title: "Nutrition Coaching",
       description:
         "Science-backed dietary coaching tailored for muscle gain, fat loss, or competition prep.",
-      image: "/Images/nutrition.jpg",
+      image: "/Images/lifestyle.jpg",
     },
   };

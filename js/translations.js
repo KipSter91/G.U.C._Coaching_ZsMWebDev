@@ -1,7 +1,7 @@
 //This module contains the translations for the G.U.C. Coaching website in multiple languages.
 export const translations = {
     en: {
-        title: "G.U.C. Coaching",
+        title: `G.U.C. Coaching`,
         about: "About",
         services: "Services",
         stats: "Stats",
@@ -13,18 +13,24 @@ export const translations = {
         aboutText:
             "I'm a certified personal trainer with over 8 years of experience helping clients build muscle, burn fat, and master discipline. My mission is to transform not only physiques but lives — with proven methods, tailored support, and relentless energy.",
         servicesTitle: "Services",
-        lifestyleCoaching: "Lifestyle Coaching",
+        lifestyleCoaching: "Personal Training",
         lifestyleText:
-            "Daily habit optimization, stress management, and sustainable routines tailored to your life.",
-        supplementGuidance: "Supplement Guidance",
-        supplementText:
-            "Personalized supplement plans to support performance, recovery, and health goals.",
-        workoutPlans: "Custom Workout Plans",
+            "Optimize your habits, manage stress, and create a routine that fits your lifestyle. Daily success starts here.",
+        onlineCoaching: "Online Coaching",
+        onlineCoachingText:
+            "Get tailored supplement advice to boost performance, recovery, and overall health — fully remote and effective.",
+        workoutPlans: "Workout Plans",
         workoutText:
-            "Personalized strength and hypertrophy routines tailored to your body and goals.",
-        nutritionCoaching: "Nutrition Coaching",
+            "Custom strength and hypertrophy plans built around your goals and physique. Train smarter, grow stronger.",
+        mealPlans: "Meal Plans",
+        mealPlansText:
+            "Science-backed meal plans for fat loss, muscle building, or stepping on stage. Fuel your goals the right way.",
+        nutritionCoaching: "Supplement Guidance & Nutrition Coaching",
         nutritionText:
-            "Science-based diet plans for fat loss, muscle gain, or competition prep.",
+            "Your roadmap to better results. Expert nutrition and supplement strategies for fat loss, muscle gain, or prep.",
+        fitReceipts: "Fit Receipts",
+        fitReceiptsText:
+            "Easy-to-follow recipe plans for your fitness goals. Healthy eating doesn’t have to be boring — or complicated.",
         statsTitle: "My Results",
         clients: "Clients Transformed",
         experience: "Years Experience",
@@ -40,6 +46,12 @@ export const translations = {
         sendMessage: "Send Message",
         footerText: "All rights reserved.",
         footerBuilt: "Built with ❤️ by",
+        ///Personal traning
+        ///Workout plan
+        ///Online coaching
+        ///Supplement guidance and nutrition coaching
+        ///Mealplan
+        ///Receipts
     },
     hu: {
         title: "G.U.C. Coaching",
@@ -55,18 +67,24 @@ export const translations = {
         aboutText:
             "Tanúsított személyi edző vagyok, több mint 8 év tapasztalattal. Segítek az ügyfeleknek izmot építeni, zsírt égetni, és elsajátítani a fegyelmet. Küldetésem, hogy ne csak a testeket, hanem életeket is átalakítsak – bizonyított módszerekkel, személyre szabott támogatással és fáradhatatlan energiával.",
         servicesTitle: "Szolgáltatások",
-        lifestyleCoaching: "Életmód Coaching",
+        lifestyleCoaching: "Személyi Edzés",
         lifestyleText:
-            "Napi szokások optimalizálása, stresszkezelés és fenntartható rutinok az életedhez igazítva.",
-        supplementGuidance: "Táplálékkiegészítő Tanácsadás",
-        supplementText:
-            "Személyre szabott kiegészítő tervek a teljesítmény, regeneráció és egészség támogatására.",
-        workoutPlans: "Egyéni Edzéstervek",
+            "Optimalizáld a szokásaidat, kezeld a stresszt, és alakíts ki egy életstílusodhoz illő rutint. A napi siker itt kezdődik.",
+        onlineCoaching: "Online Tanácsadás",
+        onlineCoachingText:
+            "Személyre szabott táplálékkiegészítő tanácsadás a teljesítmény, regeneráció és egészség támogatására – teljesen online.",
+        workoutPlans: "Edzéstervek",
         workoutText:
-            "Személyre szabott erő- és izomnövelő programok a testedhez és céljaidhoz igazítva.",
-        nutritionCoaching: "Táplálkozási Tanácsadás",
+            "Egyéni erő- és izomtömeg-növelő edzéstervek, a céljaidhoz és testedhez igazítva. Edz okosan, fejlődj hatékonyan.",
+        mealPlans: "Étrendek",
+        mealPlansText:
+            "Tudományos alapú étrendek fogyáshoz, izomépítéshez vagy versenyfelkészüléshez. Tápláld helyesen a céljaidat.",
+        nutritionCoaching: "Táplálékkiegészítő- & Táplálkozási Tanácsadás",
         nutritionText:
-            "Tudományosan megalapozott étrendek zsírvesztéshez, izomtömeg növeléshez vagy versenyfelkészüléshez.",
+            "Útmutató a jobb eredményekhez: profi étrend- és kiegészítő-stratégiák fogyáshoz, izomépítéshez vagy felkészüléshez.",
+        fitReceipts: "Fitt Receptek",
+        fitReceiptsText:
+            "Egyszerű, célorientált recepttervek az egészséges életmódhoz. Az egészséges étkezés lehet finom és élvezetes is.",
         statsTitle: "Eredményeim",
         clients: "Átalakított ügyfelek",
         experience: "Év tapasztalat",
@@ -97,18 +115,24 @@ export const translations = {
         aboutText:
             "Ik ben een gecertificeerde personal trainer met meer dan 10 jaar ervaring. Ik help klanten met spieropbouw, vetverlies en het ontwikkelen van discipline. Mijn missie is om niet alleen lichamen, maar levens te transformeren — met bewezen methoden, persoonlijke begeleiding en eindeloze energie.",
         servicesTitle: "Diensten",
-        lifestyleCoaching: "Leefstijl Coaching",
+        lifestyleCoaching: "Persoonlijke training",
         lifestyleText:
-            "Dagelijkse gewoonteoptimalisatie, stressmanagement en duurzame routines aangepast aan jouw leven.",
-        supplementGuidance: "Supplement Advies",
-        supplementText:
-            "Persoonlijke supplementenplannen ter ondersteuning van prestaties, herstel en gezondheid.",
-        workoutPlans: "Aangepaste Trainingsschema's",
+            "Optimaliseer je gewoontes, beheer stress en bouw een routine die past bij jouw leven. Dagelijks succes begint hier.",
+        onlineCoaching: "Online Coaching",
+        onlineCoachingText:
+            "Persoonlijk supplementadvies voor betere prestaties, herstel en gezondheid – volledig online en effectief.",
+        workoutPlans: "Trainingsschema’s",
         workoutText:
-            "Persoonlijke kracht- en spieropbouwschema’s afgestemd op jouw lichaam en doelen.",
-        nutritionCoaching: "Voedingscoaching",
+            "Persoonlijke kracht- en spieropbouwschema’s afgestemd op jouw lichaam en doelen. Train slimmer, groei sterker.",
+        mealPlans: "Maaltijdschema’s",
+        mealPlansText:
+            "Wetenschappelijk onderbouwde maaltijdschema’s voor vetverlies, spieropbouw of wedstrijdvoorbereiding. Voed je doelen op de juiste manier.",
+        nutritionCoaching: "Supplementadvies & Voedingscoaching",
         nutritionText:
-            "Wetenschappelijk onderbouwde dieetplannen voor vetverlies, spiergroei of wedstrijdvoorbereiding.",
+            "Jouw route naar betere resultaten. Voedings- en supplementstrategieën van experts voor vetverlies, spiergroei of prep.",
+        fitReceipts: "Fit Recepten",
+        fitReceiptsText:
+            "Makkelijke, doelgerichte recepten voor jouw fitnesstraject. Gezond eten hoeft niet saai of ingewikkeld te zijn.",
         statsTitle: "Mijn Resultaten",
         clients: "Getransformeerde Klanten",
         experience: "Jaren Ervaring",

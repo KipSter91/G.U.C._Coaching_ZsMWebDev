@@ -6,7 +6,7 @@ import { initSmoothScroll } from './smoothScroll.js';
 import { initFadeSections } from './fadeIn.js';
 import { initCounters } from './resultCounters.js';
 import { createServiceModal, openServiceModal } from "./modal.js";
-import { services } from "./services.js";
+import { servicesModal } from "./services.js";
 import { initHeroAnimation } from './hero.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,6 +27,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.querySelectorAll("[data-service]").forEach((el) => {
     el.addEventListener("click", () => {
         const key = el.dataset.service;
-        openServiceModal(services[key]);
+        openServiceModal(servicesModal[key]);
     });
 });
