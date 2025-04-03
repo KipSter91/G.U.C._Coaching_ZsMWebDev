@@ -5,7 +5,6 @@ export function startBreakEffect() {
 
     // Get position and size
     const rect = imgElement.getBoundingClientRect();
-    const imageURL = imgElement.src;
     const imageWidth = rect.width;
     const imageHeight = rect.height;
     const clickPosition = [imageWidth / 2, imageHeight / 2];
@@ -21,6 +20,7 @@ export function startBreakEffect() {
     container.style.overflow = "visible";
     container.style.perspective = "1000px";
     document.body.appendChild(container);
+    container.style.zIndex = 0;
 
     // Hide original image
     imgElement.style.opacity = 0;
@@ -28,14 +28,11 @@ export function startBreakEffect() {
     let image;
     let vertices = [], indices = [], fragments = [];
 
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => {
-        image = img;
+    imgElement.decode().then(() => {
+        image = imgElement;
         triangulate();
         shatter();
-    };
-    img.src = imageURL;
+    });
 
     function triangulate() {
         const TWO_PI = Math.PI * 2;
@@ -77,11 +74,11 @@ export function startBreakEffect() {
             const delay = d * 0.003 * randomRange(0.9, 1.1);
 
             gsap.to(fragment.canvas, {
-                z: 1000,
+                z: 500,
                 rotationX: 30 * Math.sign(dy),
                 rotationY: 90 * -Math.sign(dx),
                 opacity: 1,
-                duration: 2,
+                duration: 1.5,
                 delay,
                 ease: "power2.in",
                 onComplete: () => container.removeChild(fragment.canvas),

@@ -1,6 +1,6 @@
 //This module handles the internationalization (i18n) functionality for the website.
 import { translations } from '/js/translations.js';
-console.log(translations);
+// console.log(translations);
 
 export const applyTranslations = (lang) => {
     const t = translations[lang] || {};

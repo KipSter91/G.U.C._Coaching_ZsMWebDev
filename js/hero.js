@@ -1,30 +1,33 @@
 //This module handles the hero section animation for the website
-
 import { startBreakEffect } from './logoBreak.js';
+import { delay } from './delay.js';
 
-export function initHeroAnimation() {
+// Initializes the animated hero section sequence
+export async function initHeroAnimation() {
     const logo = document.getElementById("logo-overlay");
     const textContainer = document.getElementById("hero-text");
     const video = document.getElementById("hero-video");
+
+    // Ensure required elements exist
     if (!logo || !textContainer || !video) return;
-    
+
+    // Start video from a specific timestamp
     video.currentTime = 3.5;
     video.play();
-    // 1. Logo entry
+
+    // 1. Animate logo entry
     logo.classList.add("animate-logo-enter");
 
-    setTimeout(() => {
-        logo.classList.remove("animate-logo-enter");
-    }, 3000);
-    
-    setTimeout(() => {
-        startBreakEffect();
-    }, 2800);
-    
+    // 2. Wait ~2.8s before triggering break effect
+    await delay(2800);
+    startBreakEffect();
 
-    // 3. Text after 3s come back
-    setTimeout(() => {
-        textContainer.classList.remove("opacity-0");
-        textContainer.classList.add("animate-text-in");
-    }, 4500);
+    // 3. Wait a bit more before removing the logo completely from DOM
+    await delay(500);
+    logo.remove(); // clean removal
+
+    // 4. Finally, reveal the hero text with fade-in effect
+    await delay(1100);
+    textContainer.classList.remove("opacity-0");
+    textContainer.classList.add("animate-text-in");
 }
