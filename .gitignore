@@ -1,0 +1,56 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+.out/
+.cache/
+.next/
+.vite/
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Env files
+.env
+.env.* 
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Parcel cache
+.parcel-cache/
+
+# VS Code specific
+*.code-workspace
+
+# MacOS
+Icon?
+
+# Others
+*.local
+*.swp
+*.bak
+*.tmp
+
+# Parcel
+.parcel_cache

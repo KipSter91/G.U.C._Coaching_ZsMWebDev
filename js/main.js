@@ -1,4 +1,7 @@
 //This module is the main entry point for the website's JavaScript functionality.
+// import "regenerator-runtime/runtime.js";
+// import "core-js/actual";
+
 import { initLanguageSwitcher } from './i18n.js';
 import { initScrollEffects } from './scrollEffects.js';
 import { initHamburgerMenu } from './hamburgerMenu.js';

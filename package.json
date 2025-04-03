@@ -1,0 +1,28 @@
+{
+  "name": "david_vagusz_landing",
+  "version": "1.0.0",
+  "description": "Landing page for David Vagusz (personal trainer)",
+  "source": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KipSter91/G.U.C._Coaching_ZsMWebDev.git"
+  },
+  "author": "Zsolt Márku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KipSter91/G.U.C._Coaching_ZsMWebDev/issues"
+  },
+  "homepage": "https://github.com/KipSter91/G.U.C._Coaching_ZsMWebDev#readme",
+  "dependencies": {
+    "core-js": "^3.41.0",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}

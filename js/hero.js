@@ -12,7 +12,7 @@ export async function initHeroAnimation() {
     if (!logo || !textContainer || !video) return;
 
     // Start video from a specific timestamp
-    video.currentTime = 3.5;
+    video.currentTime = 2;
     video.play();
 
     // 1. Animate logo entry
@@ -23,11 +23,11 @@ export async function initHeroAnimation() {
     startBreakEffect();
 
     // 3. Wait a bit more before removing the logo completely from DOM
-    await delay(500);
+    await delay(200);
     logo.remove(); // clean removal
 
     // 4. Finally, reveal the hero text with fade-in effect
-    await delay(1100);
+    await delay(1300);
     textContainer.classList.remove("opacity-0");
     textContainer.classList.add("animate-text-in");
 }
